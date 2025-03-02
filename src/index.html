@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turtle Code - Blogs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section id="blogs">
+            <h2>Blogs</h2>
+            <button id="addBlogButton">Add New Blog</button>
+            <div id="blogList"></div>
+        </section>
+
+        <!-- Blog Addition Modal -->
+        <div id="addModal" class="modal">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <h3>Add New Blog</h3>
+                <form id="addForm">
+                    <label for="addTitle">Title:</label>
+                    <input type="text" id="addTitle" required><br><br>
+                    <label for="addContent">Content:</label>
+                    <textarea id="addContent" required></textarea><br><br>
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Blog Editing Modal -->
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <h3>Edit Blog</h3>
+                <form id="editForm">
+                    <label for="editTitle">Title:</label>
+                    <input type="text" id="editTitle" required><br><br>
+                    <label for="editContent">Content:</label>
+                    <textarea id="editContent" required></textarea><br><br>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

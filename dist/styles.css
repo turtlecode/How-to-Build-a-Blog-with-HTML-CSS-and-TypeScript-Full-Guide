@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+#blogs h2 {
+    color: #757575; /* Light gray, a harmonious tone for headings */
+}
+
+#addBlogButton {
+    background-color: #2e7d32; /* Yeşil tonu geri döndürüldü */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#addBlogButton:hover {
+    background-color: #1b5e20; /* Yeşil tonun hover efekti */
+}
+
+.blog-card {
+    background-color: #2a2a2a;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-card:hover {
+    background-color: #3c3c3c;
+}
+
+.blog-card h3 {
+    margin: 0;
+    color: #b0bec5; /* Light gray, for headings in blog cards */
+}
+
+.blog-card p {
+    margin: 5px 0 0;
+    flex-grow: 1;
+}
+
+.delete-button {
+    background-color: #d32f2f; /* Red delete button retained, can be changed to gray if desired */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-button:hover {
+    background-color: #b71c1c;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #2a2a2a;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+}
+
+#addForm label, #editForm label {
+    display: block;
+    margin-bottom: 5px;
+    color: #b0bec5; /* Light gray, a harmonious tone for labels */
+}
+
+#addForm input, #addForm textarea, #editForm input, #editForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #3c3c3c;
+    border: 1px solid #555;
+    color: #e0e0e0;
+    border-radius: 4px;
+}
+
+#addForm button, #editForm button {
+    background-color: #2e7d32; /* Yeşil tonu geri döndürüldü */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addForm button:hover, #editForm button:hover {
+    background-color: #1b5e20; /* Yeşil tonun hover efekti */
+}
