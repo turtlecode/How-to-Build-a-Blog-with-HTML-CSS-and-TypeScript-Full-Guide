@@ -1,0 +1,11 @@
+{
+    "name": "turtle-portfolio",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "tsc",
+        "start": "tsc && copy src\\index.html dist\\ && copy src\\styles.css dist\\ && echo Compilation completed!!"
+    },
+    "devDependencies": {
+        "typescript": "^5.0.0"
+    }
+}
